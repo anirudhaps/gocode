@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "runtime"
 
 func main() {
     fmt.Println(sumOf(12, 21))
@@ -16,6 +17,28 @@ func main() {
     loopStudy1()
     loopStudy2()
     sprintStudy()
+    switchStudy()
+    deferStudy()
+}
+
+func deferStudy() {
+    defer fmt.Println("World")
+    for i:=0; i < 10; i++ {
+        defer fmt.Println(i)
+    }
+    fmt.Println("Hello")
+    fmt.Println("done")
+}
+
+func switchStudy() {
+    switch myos := runtime.GOOS; myos {
+    case "linux":
+        fmt.Println("Linux.")
+    case "darwin":
+        fmt.Println("OS X.")
+    default:
+        fmt.Println("%s.", myos)
+    }
 }
 
 func loopStudy() {
