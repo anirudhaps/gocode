@@ -1,0 +1,33 @@
+Job requirements:
+
+1. Have good experience in at least one OOP programming language (Preferably java)
+2. Knowledge of at least one database / DBMS (mysql, oracle etc)
+3. Java / J2EE skills and related stuff
+4. Scripting language knowledge (preferably perl / python / shell scripting)
+5. Experience with Agile development
+6. REST / SOAP apis and web services
+7. Knowledge of standard build and deployment tools such as Eclipse, Maven, Git, Ant, and Jira
+8. Good knowledge of web technologies and related frameworks
+9. C language, experience with linux environment
+10. Excelent knowledge of operating systems, Networking and network programming, Computer system architecture
+11. Contribution to open-source projects
+12. Experience with NoSQL databases
+13. Devops and related platforms
+14. Data structures, Algorithms, problem solving
+15. Linux system programming and device driver development
+16. C++ experience in case of systems company
+17. Knowledge of cloud computing technologies
+18. Nvidia: knowledge of parallel programming, CUDA, OpenCL etc.
+---------------------------------------------------------------------------------------------------------------
+
+1. C language: All topics, memory management etc, code reading of opensource projects.
+2. Java: master it, make projects
+3. Python and shell scripting: learn well, learn the techniques, practice various usage
+4. Data structures and Algorithms, problem solving: spoj, interviewbit, leetcode, geeksforgeeks
+5. Operating systems, networking, DBMS, Computer systems organization and architecture.
+6. Systems programming, network programming, linux kernel, device drivers
+7. Web technologies: html, css, javascript etc, make projects
+8. Hands on experience with some database, noSQL database as well
+9. Learn various compilation/debugging/development/testing tools
+10. Read, understand and try to be expert in project code.
+
