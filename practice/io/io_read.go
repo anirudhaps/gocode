@@ -42,7 +42,8 @@ func readType4() {
 	for {
 		fmt.Print("-> ")
 		text, _ := reader.ReadString('\n')
-		text = strings.Replace(text, "\r\n", "", -1)
+		// change below "\n" to "\r\n" if running on windows
+		text = strings.Replace(text, "\n", "", -1)
 		if strings.Compare(text, "stop") == 0 {
 			break
 		}
@@ -50,9 +51,37 @@ func readType4() {
 	}
 }
 
+// reading a single UTF-8 unicode character
+func readType5() {
+	fmt.Print("Enter any utf-8 char:")
+	reader := bufio.NewReader(os.Stdin)
+	ch, _, err := reader.ReadRune()
+	if err != nil {
+		fmt.Println("Error:", err)
+	}
+	fmt.Printf("char: %c\n", ch)
+}
+
+// using bufio's Scanner
+func readType6() {
+	fmt.Print("Enter input:> ")
+	sc := bufio.NewScanner(os.Stdin)
+	// the following will infinitely scan the input and read it and for every
+	// valid input it will return true.
+	// Returns: false in case of error or EOF
+	// CTRL-D will generate EOF
+	// Error can be seen by calling sc.Err(), for EOF, Err() returns <nil>
+	for sc.Scan() {
+		fmt.Println(sc.Text())
+	}
+	fmt.Println("Error stat:", sc.Err())
+}
+
 func main() {
 	//readType1()
 	//readType2()
 	//readType3()
-	readType4()
+	//readType4()
+	//readType5()
+	readType6()
 }
