@@ -19,6 +19,11 @@ func getNegetive(num int) (int, bool) {
 	return num, false
 }
 
+// returning three values
+func retValues() (int, bool, bool) {
+	return 3, true, false
+}
+
 // If all the parameters are of same type, then the following syntax also works
 func average(n1, n2 float32) float32 {
 	return (n1 + n2) / 2.0
@@ -46,7 +51,8 @@ func main() {
 
 	// Note: assigning something to _ discards that value.
 	// This is useful when some value(s) returned by a funtion is/are not useful
+	_, _, third := retValues() // discard first two values
+	fmt.Println("Got third val:", third)
 
 	fmt.Println("average of 17, 22:", average(17, 22))
 }
-
