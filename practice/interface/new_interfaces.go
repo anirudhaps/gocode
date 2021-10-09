@@ -62,7 +62,7 @@ func main() {
 	measure(cir)
 
 	// another way:
-	// we can create a slice of type geometry and eah element of that slice can
+	// we can create a slice of type geometry and each element of that slice can
 	// be a type that has implemented the interface geometry
 	figures := []geometry{rectangle{10, 4}, circle{5}}
 	//fmt.Println(figures)

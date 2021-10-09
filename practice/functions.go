@@ -41,7 +41,7 @@ func main() {
 	}
 
 	// just checking the value's validity, assigning the actual value to _
-	// this is same like discarding
+	// this is same like discarding. _ is also called blank identifier
 	_, isValid = getNegetive(41)
 	if isValid {
 		fmt.Println("Valid value")

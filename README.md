@@ -1,2 +1,47 @@
 # gocode
-This repository will have go lang code
+
+gocode is repository containing golang code snippets, algorithm implementations, patterns, links to other golang resources, etc.
+
+## Golang Resources
+* [Golang main-site](https://golang.org/)
+* [How to write Go code](https://golang.org/doc/code)
+* **Golang Tutorials and Books**
+  * [Go By Example](https://gobyexample.com/)
+  * [A tour of Go](https://tour.golang.org/welcome/1)
+  * [Effective Go](https://golang.org/doc/effective_go)
+  * [Golang FAQ](https://golang.org/doc/faq)
+  * [The Little Go Book](https://www.openmymind.net/The-Little-Go-Book/)
+  * [Callicoder](https://www.callicoder.com/categories/golang/)
+  * [TutorialEdge](https://tutorialedge.net/course/golang/)
+  * [golang book](https://www.golang-book.com/)
+  * [golang bootcamp](http://www.golangbootcamp.com/book)
+  * [gophercises](https://gophercises.com/)
+  * [Web applications with golang](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/index.html)
+  * [How to code in Go? - DigitalOcean](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-go)
+  * [YourBasic](https://yourbasic.org/golang/)
+* **Youtube Videos**
+  * [Derek Banas](https://www.youtube.com/watch?v=CF9S4QZuV30)
+  * [Golang Cafe](https://www.youtube.com/c/GolangCafe)
+* **Other Resources**
+  * [How do I go about learning Go? - Medium](https://medium.com/@IndianGuru/how-do-i-go-about-learning-go-3a58a3a29a0b)
+  * [GoCasts Github Repo](https://github.com/StephenGrider/GoCasts)
+  * [Top 10 online courses - Medium](https://medium.com/javarevisited/7-online-courses-to-learn-golang-or-go-programming-languages-in-2020-f599a25cf14a)
+  * [A Comprehensive Guide to Slices in Golang](https://codeburst.io/a-comprehensive-guide-to-slices-in-golang-bacebfe46669)
+  * [RunGo - Medium](https://medium.com/rungo)
+  * [Structs in Go - RunGo](https://medium.com/rungo/structures-in-go-76377cc106a2)
+  * [Maps - yourbasic](https://yourbasic.org/golang/maps-explained/)
+  * [Map Types in Golang - Medium](https://medium.com/wesionary-team/map-types-in-golang-24591abbafc6)
+  * [Nil in Golang - Medium](https://medium.com/@ishagirdhar/nil-in-golang-aaa16565a5be)
+  * [Interfaces in Go - RunGo](https://medium.com/rungo/interfaces-in-go-ab1601159b3a)
+  * [How to use interfaces in Go](https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
+  * [Pointers in Go - RunGo](https://medium.com/rungo/pointers-in-go-a789eafccd53)
+  * [Packages in Go - RunGo](https://medium.com/rungo/everything-you-need-to-know-about-packages-in-go-b8bac62b74cc)
+  * [Concurrency in Go - Medium](https://emretanriverdi.medium.com/concurrency-in-go-1af9349b1103)
+  * [Goroutines and Channels](https://levelup.gitconnected.com/goroutines-and-channels-concurrent-programming-in-go-9f9f8495c34d)
+  * [Goroutines and Channels - Shichao's Notes](https://notes.shichao.io/gopl/ch8/)
+  * [Kassim Damilola - Medium](https://medium.com/@kdnotes)
+  * [Go Modules - TutorialEdge](https://tutorialedge.net/golang/go-modules-tutorial/)
+  * [Getting started with Go modules - Medium](https://medium.com/@fonseka.live/getting-started-with-go-modules-b3dac652066d)
+  * [Using Go modules](https://go.dev/blog/using-go-modules)
+  * [New Module changes in go v1.16](https://go.dev/blog/go116-module-changes)
+  * [Modules in Go - RunGo](https://medium.com/rungo/anatomy-of-modules-in-go-c8274d215c16)
