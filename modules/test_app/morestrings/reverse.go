@@ -1,5 +1,9 @@
 package morestrings
 
+// In Go packages, all identifiers will be exported to other packages if the
+// first letter of the identifier name starts with an uppercase letter.
+// The functions and types will not be exported to other packages if we start
+// with a lowercase letter for the identifier name.
 // ReverseRunes returns its argument string reversed rune-wise left to right.
 func ReverseRunes(s string) string {
 	r := []rune(s)
