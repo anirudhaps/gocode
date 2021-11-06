@@ -31,6 +31,10 @@ func main() {
 	//ptrAjay.updateName2("Vijay")
 	ajay.updateName2("Vijay") //shortcut
 	ajay.print()
+
+	contact := contactInfo{}
+	// If we omit the values in the curly brackets, they are initialized to zero values
+	fmt.Println("(empty)Contact info:[", contact.email, "][", contact.zipCode, "]")
 }
 
 func (p person) updateName(newName string) {

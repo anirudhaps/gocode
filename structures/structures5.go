@@ -19,4 +19,7 @@ func main() {
 	amit.lastName = "Tondon"
 	fmt.Println(amit)
 	fmt.Printf("%+v\n", amit)
+
+	dummy := person{}
+	fmt.Println(dummy.firstName, dummy.lastName)
 }
