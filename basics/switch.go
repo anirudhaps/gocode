@@ -59,16 +59,28 @@ func getCharType(ch rune) string {
 	return chType
 }
 
+func typeChecker(val interface{}) {
+	// this is called type switch
+	switch val.(type) {
+	case rune:
+		fmt.Println(val, "is a rune")
+	case string:
+		fmt.Println(val, "is a string")
+	default:
+		fmt.Printf("Type of %v is %T\n", val, val)
+	}
+}
+
 func main() {
 	for i := 1; i < 5; i++ {
 		fmt.Println(getName(i))
 	}
 
 	studs := []*Student{
-		&Student{"Ajay", 20},
-		&Student{"Vijay", 23},
-		&Student{"Jyoti", 5},
-		&Student{"Vivek", 10},
+		{"Ajay", 20},
+		{"Vijay", 23},
+		{"Jyoti", 5},
+		{"Vivek", 10},
 	}
 
 	for i := 0; i < len(studs); i++ {
@@ -76,8 +88,16 @@ func main() {
 	}
 
 	fmt.Println("Analyse my name:")
+	// range will return each character of string as rune
 	for _, ch := range "Anirudha P Singh" {
 		fmt.Printf("%s ", getCharType(ch))
 	}
 	fmt.Printf("\n")
+
+	fmt.Println("Type analysis:")
+	// each char in golang is a unicode character and thus is of type rune
+	values := []interface{}{'j', "hello", 34, 2.34}
+	for _, val := range values {
+		typeChecker(val)
+	}
 }

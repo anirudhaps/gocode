@@ -49,6 +49,9 @@ func main() {
 		fmt.Println("Invalid value")
 	}
 
+	// error: assignment mismatch: 1 variable but getNegetive returns 2 values
+	// val = getNegetive(12)  // this gives above error
+
 	// Note: assigning something to _ discards that value.
 	// This is useful when some value(s) returned by a funtion is/are not useful
 	_, _, third := retValues() // discard first two values

@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Student struct {
-	name string
+	name   string
 	rollNo int
 }
 
@@ -20,7 +20,7 @@ func (s *Student) updateRollNo() {
 // factory method for constructing struct objects
 func NewStudent(sname string, sroll int) Student {
 	return Student{
-		name: sname,
+		name:   sname,
 		rollNo: sroll,
 	}
 }
@@ -28,14 +28,14 @@ func NewStudent(sname string, sroll int) Student {
 // another factory that returns pointer to a Student
 func CreateStudent(sname string, sroll int) *Student {
 	return &Student{
-		name: sname,
+		name:   sname,
 		rollNo: sroll,
 	}
 }
 
 func main() {
 	ajit := &Student{
-		name: "Ajit",
+		name:   "Ajit",
 		rollNo: 1,
 	}
 
@@ -52,12 +52,12 @@ func main() {
 
 	// using new function to allocate memory for a type like struct
 	mallesh := new(Student)
+	/*
+		Above code is same as:
+		mallesh := &Student{}
+	*/
 	mallesh.name = "Mallesham"
 	mallesh.rollNo = 31
 
-	/*
-	Above code is same as:
-	mallesh := &Student{}
-	*/
 	mallesh.display()
 }
