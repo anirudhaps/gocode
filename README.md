@@ -45,3 +45,4 @@ gocode is repository containing golang code snippets, algorithm implementations,
   * [Using Go modules](https://go.dev/blog/using-go-modules)
   * [New Module changes in go v1.16](https://go.dev/blog/go116-module-changes)
   * [Modules in Go - RunGo](https://medium.com/rungo/anatomy-of-modules-in-go-c8274d215c16)
+  * [Defer, Panic, and Recover](https://go.dev/blog/defer-panic-and-recover)
