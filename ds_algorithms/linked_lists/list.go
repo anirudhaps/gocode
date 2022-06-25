@@ -54,6 +54,40 @@ func DisplayList(head *Node) {
 	fmt.Printf("\n")
 }
 
+func MiddleNode(head *Node) *Node {
+	if head == nil || head.next == nil {
+		return head
+	}
+
+	var one *Node = head
+	var two *Node = head.next
+	for two != nil {
+		one = one.next
+		two = two.next
+		if two == nil {
+			break
+		}
+		two = two.next
+	}
+	return one
+}
+
+func DeleteNonTailNode(node *Node) {
+	if node == nil || node.next == nil {
+		return
+	}
+	// swap data with next node
+	var temp int = node.data
+	node.data = node.next.data
+	node.next.data = temp
+	// delete next node
+	nextNode := node.next
+	node.next = nextNode.next
+	nextNode.next = nil
+	nextNode = nil // garbage collector will take care about freeing the space of deleted node
+	// we just have to make that space as non-pointed, that is, no pointer should be pointing to it
+}
+
 func main() {
 	command := "y"
 	var inp int
@@ -80,5 +114,9 @@ func main() {
 		fmt.Scanf("%s", &command)
 	}
 
+	DisplayList(head)
+	midNode := MiddleNode(head)
+	fmt.Printf("Middle node data value: %d\n", midNode.data)
+	DeleteNonTailNode(midNode)
 	DisplayList(head)
 }
