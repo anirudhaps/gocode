@@ -31,7 +31,7 @@ func Maps2() {
 }
 
 func Maps3() {
-	// another way of map declaration and initialization
+	// another way of map declaration and initialization: also called map literal
 	students := map[string]int{
 		"Abhinav": 10,
 		"Rakesh":  19,

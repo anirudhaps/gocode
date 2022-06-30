@@ -18,8 +18,17 @@ func main() {
 	amit.firstName = "Amit"
 	amit.lastName = "Tondon"
 	fmt.Println(amit)
+	// when printing structs, the plus flag (%+v) adds field names
 	fmt.Printf("%+v\n", amit)
 
 	dummy := person{}
 	fmt.Println(dummy.firstName, dummy.lastName)
+
+	// comma is important here after lastName line
+	hiren := person{
+		firstName: "Hiren",
+		lastName:  "Shah",
+	}
+	fmt.Println(hiren.firstName, hiren.lastName)
+	fmt.Printf("%v\n", hiren)
 }
