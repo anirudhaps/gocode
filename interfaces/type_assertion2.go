@@ -11,7 +11,7 @@ type Numbers struct {
 	y int
 }
 
-// Because Numbers is implementing Add(), it is implementing Opration interface
+// Because Numbers is implementing Add(), it is implementing Operation interface
 func (n *Numbers) Add() int {
 	return n.x + n.y
 }
@@ -30,9 +30,9 @@ func main() {
 	// This means we can only invoke the methods declared in the interface via
 	// that interface's variable even though the underlying struct (that is
 	// implementing that interface) has that method. Thus, in order to invoke
-	// other methods of Numbers, we have to type cast oper to *Numbers
-	num, ok := oper.(*Numbers)
-	if ok {
+	// other methods of Numbers, we have to type cast oper to *Numbers. Type
+	// casting an interface to underlying type us known as type assertion.
+	if num, ok := oper.(*Numbers); ok {
 		fmt.Printf("Diff: %v\n", num.Subtract())
 	}
 }
